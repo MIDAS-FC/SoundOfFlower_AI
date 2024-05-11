@@ -1,13 +1,9 @@
 import boto3
-import torch
 from io import BytesIO
 from kobert_tokenizer import KoBERTTokenizer
 from transformers import BertModel
 from torch import nn
-import torch
 from torch.utils.data import Dataset, DataLoader
-import torch
-import numpy as np
 import torch
 import numpy as np
 from torch.nn.functional import softmax
