@@ -14,12 +14,10 @@ else:
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 print(f"Using device: {device}")
 
-s3 = boto3.client('s3')
-
-
 model_file_path = 'kobert_emotion_model.pt'  
 model_state_dict = torch.load(model_file_path, map_location=device)
 
+# s3 = boto3.client('s3')
 # bucket_name = 'soundofflower'  
 # object_name = 'kobert_emotion_model.pt'  
 # response = s3.get_object(Bucket=bucket_name, Key=object_name)
